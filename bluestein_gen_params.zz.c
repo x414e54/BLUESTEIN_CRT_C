@@ -244,7 +244,7 @@ size_t calc_crt_primes(zz_t **primes, zz_t *product,
         return 11;
     } else if (r == 242 && k == 64) {
         // Num primes = ceil(2*r/(k-4))
-        *primes = (zz_t*)malloc(9 * sizeof(zz_t));
+        *primes = (zz_t*)malloc(17 * sizeof(zz_t));
         (*primes)[0] = zz_uint64(1152921504843694081);
         (*primes)[1] = zz_uint64(1152921505159495681);
         (*primes)[2] = zz_uint64(1152921506927984641);
